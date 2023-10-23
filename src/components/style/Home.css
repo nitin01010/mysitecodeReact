@@ -1,0 +1,144 @@
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: yellow;
+    padding: 10px;
+    height: 500px;
+}
+.Home span{
+    text-align: center;
+    width: 350px;
+    padding: 5px;
+    margin: 10px;
+    overflow: hidden;
+    color: black;
+}
+.LogoHome{
+    height:300px;
+}
+.Home_Logo{
+    width: 300px;
+    border-radius: 50%;
+}
+.ParaHome{
+    font-size: 18px;
+    padding: 5px;
+    word-spacing: 3px;
+    text-align: start;
+}
+.Btn1,.Btn2{
+    margin: 5px;
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-top: 5%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.Btn1{
+    background-color: black;
+    color: white;
+}
+.Btn2{
+    box-shadow: 2px 2px 2px 2px royalblue;
+    transition: all ease 0.500s;
+}
+.Btn2:hover{
+    background-color: royalblue;
+    color: white;
+}
+/* Here is New Section Start */
+.HomeSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: yellow;
+}
+.SectionBox{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 2px 2px royalblue;
+    border-radius: 5px;
+}
+.HomeSectionh1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    background-color: yellow;
+    padding: 10px;
+    margin-bottom: -10px;
+}
+.SectionBox ul ol{
+    text-align: start;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 10%;
+}
+.LogoSection{
+    height: 400px;
+    margin-left: -40%;
+    margin-top: -25%;
+}
+@media screen and (max-width:600px) {
+    .SectionBox ul ol{
+        font-size: 18px;
+    }
+    .LogoSection{
+        height: 235px;
+        margin-left: -19%;
+        margin-top: 2%;
+    }
+    .SectionBox{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:1298px) {
+    .Home span{
+        width: 400px;
+        padding: 10px;
+        transition: all ease 0.500s;
+    }   
+}
+
+@media screen and (max-width:1000px) {
+    .Home span{
+        text-align: center;
+        padding: 5px;
+        width: 80%;
+        color: black;
+        transition: all ease 0.500s;
+    }
+    .Home{
+        flex-wrap: wrap;
+        height: auto;
+        transition: all ease 0.500s;
+    }
+    .FramLogo{
+        width: 150px !important;
+        margin-top: 10% !important;
+        height: 300px;
+    }
+    .Btn1,.Btn2{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .Home span{
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        font-size: 15px;
+        color: black;
+        transition: all ease 0.500s;
+    }
+}

@@ -1,0 +1,60 @@
+.Nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: yellow;
+    padding: 5px;
+    flex-wrap: wrap;
+    height: 60px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.Nav ul li{
+    display: inline-block;
+}
+.Link{
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.Bugger{
+    position: absolute;
+    right: 30px;
+    padding: 10px;
+    display: none;
+}
+.navLogo{
+    font-size: 30px;
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .Navbar{
+        background-color: white;
+    position: absolute;
+    top: 90px;
+    border: none;
+    height: 75%;
+    width: 91%;
+    border-radius: 4px;
+    z-index: 2;
+        transform: translateX(-800px);
+    }
+    .Bugger{
+        display: block;
+    }
+    ion-icon{
+        font-size: 30px;
+        display: block;
+    }
+    .Link{
+        font-size: 15px;
+    }
+    .Nav ul li{
+        display: block;
+    }
+}
+#Bugger:checked ~ .Navbar{
+    transform: translateX(0px);
+    transition: all  ease-in-out 0.500s ;
+}

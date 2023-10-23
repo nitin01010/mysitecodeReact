@@ -1,0 +1,36 @@
+.SigninContainer{
+    background-color: yellow;
+    padding:15px;
+    margin: 1px auto;
+    height: 400px;
+}
+.SigninContainer h2{
+    text-align: center;
+    margin-bottom: 1%;
+}
+.SigninContainer form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.SigninContainer form input{
+    width:300px;
+    background-color: white;
+    margin: 10px;
+    padding: 14px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+}
+#BtnCr{
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    .SigninContainer form input{
+        width: 200px;
+    }   
+}
